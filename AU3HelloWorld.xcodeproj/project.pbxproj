@@ -107,6 +107,7 @@
 
 /* Begin PBXFileReference section */
 		891C1F722EC9EE61005C6315 /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
+		8940C6002ECA0A5F00ADE68F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D49AD202EC9D6E400DE7273 /* AU3HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AU3HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D49AD232EC9D6E400DE7273 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D49AD272EC9D6E500DE7273 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
@@ -222,6 +223,7 @@
 		8D49AD172EC9D6E400DE7273 = {
 			isa = PBXGroup;
 			children = (
+				8940C6002ECA0A5F00ADE68F /* README.md */,
 				891C1F722EC9EE61005C6315 /* DEVELOPMENT_TEAM.xcconfig */,
 				8D49AD222EC9D6E400DE7273 /* AU3HelloWorld */,
 				8D49AD4B2EC9D6E700DE7273 /* AU3HelloWorldExtension */,
