@@ -1,0 +1,1337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		891C1F7B2EC9EF6C005C6315 /* AU3HelloWorldEffectExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8D49ADA92EC9D74300DE7273 /* AU3HelloWorldEffectExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		891C1F7E2EC9EF6C005C6315 /* AU3HelloWorldMIDIExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8D49AE0A2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D49AD242EC9D6E500DE7273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD232EC9D6E400DE7273 /* ContentView.swift */; };
+		8D49AD282EC9D6E500DE7273 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD272EC9D6E500DE7273 /* ViewControllerRepresentable.swift */; };
+		8D49AD2B2EC9D6E500DE7273 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AD2A2EC9D6E500DE7273 /* Synth.aif */; };
+		8D49AD2D2EC9D6E500DE7273 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD2C2EC9D6E500DE7273 /* SimplePlayEngine.swift */; };
+		8D49AD302EC9D6E500DE7273 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD2F2EC9D6E500DE7273 /* MIDIManager.swift */; };
+		8D49AD322EC9D6E500DE7273 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD312EC9D6E500DE7273 /* TypeAliases.swift */; };
+		8D49AD352EC9D6E500DE7273 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD342EC9D6E500DE7273 /* StringHelpers.swift */; };
+		8D49AD382EC9D6E500DE7273 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD372EC9D6E500DE7273 /* AudioUnitHostModel.swift */; };
+		8D49AD3A2EC9D6E500DE7273 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD392EC9D6E500DE7273 /* AudioUnitViewModel.swift */; };
+		8D49AD3C2EC9D6E500DE7273 /* AU3HelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD3B2EC9D6E500DE7273 /* AU3HelloWorldApp.swift */; };
+		8D49AD3F2EC9D6E500DE7273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AD3E2EC9D6E500DE7273 /* Preview Assets.xcassets */; };
+		8D49AD412EC9D6E600DE7273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AD402EC9D6E600DE7273 /* Assets.xcassets */; };
+		8D49AD482EC9D6E700DE7273 /* AU3HelloWorldExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8D49AD472EC9D6E700DE7273 /* AU3HelloWorldExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D49AD4D2EC9D6E700DE7273 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AD4C2EC9D6E700DE7273 /* README.md */; };
+		8D49AD522EC9D6E700DE7273 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD512EC9D6E700DE7273 /* ParameterSpecBase.swift */; };
+		8D49AD552EC9D6E700DE7273 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD542EC9D6E700DE7273 /* CrossPlatform.swift */; };
+		8D49AD572EC9D6E700DE7273 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD562EC9D6E700DE7273 /* String+Utils.swift */; };
+		8D49AD5B2EC9D6E700DE7273 /* AU3HelloWorldExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD5A2EC9D6E700DE7273 /* AU3HelloWorldExtensionAudioUnit.mm */; };
+		8D49AD5E2EC9D6E700DE7273 /* AU3HelloWorldExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AD5D2EC9D6E700DE7273 /* AU3HelloWorldExtensionAUProcessHelper.hpp */; };
+		8D49AD622EC9D6E700DE7273 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD612EC9D6E700DE7273 /* Parameters.swift */; };
+		8D49AD662EC9D6E700DE7273 /* AU3HelloWorldExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AD652EC9D6E700DE7273 /* AU3HelloWorldExtensionDSPKernel.hpp */; };
+		8D49AD692EC9D6E700DE7273 /* AU3HelloWorldExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD682EC9D6E700DE7273 /* AU3HelloWorldExtensionMainView.swift */; };
+		8D49AD6B2EC9D6E700DE7273 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD6A2EC9D6E700DE7273 /* ParameterSlider.swift */; };
+		8D49AD702EC9D6E700DE7273 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AD6E2EC9D6E700DE7273 /* AudioUnitViewController.xib */; };
+		8D49AD722EC9D6E700DE7273 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD712EC9D6E700DE7273 /* ObservableAUParameter.swift */; };
+		8D49AD742EC9D6E700DE7273 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AD732EC9D6E700DE7273 /* AudioUnitViewController.swift */; };
+		8D49ADAF2EC9D74300DE7273 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D49ADAE2EC9D74300DE7273 /* README.md */; };
+		8D49ADB42EC9D74300DE7273 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADB32EC9D74300DE7273 /* ParameterSpecBase.swift */; };
+		8D49ADB72EC9D74300DE7273 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADB62EC9D74300DE7273 /* CrossPlatform.swift */; };
+		8D49ADB92EC9D74300DE7273 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADB82EC9D74300DE7273 /* String+Utils.swift */; };
+		8D49ADBD2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADBC2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAudioUnit.mm */; };
+		8D49ADC02EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D49ADBF2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAUProcessHelper.hpp */; };
+		8D49ADC22EC9D74300DE7273 /* AU3HelloWorldEffectExtensionBufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D49ADC12EC9D74300DE7273 /* AU3HelloWorldEffectExtensionBufferedAudioBus.hpp */; };
+		8D49ADC62EC9D74300DE7273 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADC52EC9D74300DE7273 /* Parameters.swift */; };
+		8D49ADC92EC9D74300DE7273 /* AU3HelloWorldEffectExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D49ADC82EC9D74300DE7273 /* AU3HelloWorldEffectExtensionDSPKernel.hpp */; };
+		8D49ADCC2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADCB2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionMainView.swift */; };
+		8D49ADCE2EC9D74300DE7273 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADCD2EC9D74300DE7273 /* ParameterSlider.swift */; };
+		8D49ADD32EC9D74300DE7273 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D49ADD12EC9D74300DE7273 /* AudioUnitViewController.xib */; };
+		8D49ADD52EC9D74300DE7273 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADD42EC9D74300DE7273 /* ObservableAUParameter.swift */; };
+		8D49ADD72EC9D74400DE7273 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49ADD62EC9D74400DE7273 /* AudioUnitViewController.swift */; };
+		8D49AE102EC9D77F00DE7273 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AE0F2EC9D77F00DE7273 /* README.md */; };
+		8D49AE152EC9D77F00DE7273 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE142EC9D77F00DE7273 /* ParameterSpecBase.swift */; };
+		8D49AE182EC9D77F00DE7273 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE172EC9D77F00DE7273 /* CrossPlatform.swift */; };
+		8D49AE1A2EC9D77F00DE7273 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE192EC9D77F00DE7273 /* String+Utils.swift */; };
+		8D49AE1E2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE1D2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAudioUnit.mm */; };
+		8D49AE212EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AE202EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAUProcessHelper.hpp */; };
+		8D49AE252EC9D77F00DE7273 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE242EC9D77F00DE7273 /* Parameters.swift */; };
+		8D49AE282EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AE272EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionDSPKernel.hpp */; };
+		8D49AE2B2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE2A2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionMainView.swift */; };
+		8D49AE2D2EC9D77F00DE7273 /* MomentaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE2C2EC9D77F00DE7273 /* MomentaryButton.swift */; };
+		8D49AE2F2EC9D77F00DE7273 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE2E2EC9D77F00DE7273 /* ParameterSlider.swift */; };
+		8D49AE342EC9D77F00DE7273 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D49AE322EC9D77F00DE7273 /* AudioUnitViewController.xib */; };
+		8D49AE362EC9D77F00DE7273 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE352EC9D77F00DE7273 /* ObservableAUParameter.swift */; };
+		8D49AE382EC9D77F00DE7273 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49AE372EC9D77F00DE7273 /* AudioUnitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		891C1F7C2EC9EF6C005C6315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D49AD182EC9D6E400DE7273 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D49ADA82EC9D74300DE7273;
+			remoteInfo = AU3HelloWorldEffectExtension;
+		};
+		891C1F7F2EC9EF6C005C6315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D49AD182EC9D6E400DE7273 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D49AE092EC9D77F00DE7273;
+			remoteInfo = AU3HelloWorldMIDIExtension;
+		};
+		8D49AD492EC9D6E700DE7273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D49AD182EC9D6E400DE7273 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D49AD462EC9D6E700DE7273;
+			remoteInfo = AU3HelloWorldExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D49AD7B2EC9D6E700DE7273 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8D49AD482EC9D6E700DE7273 /* AU3HelloWorldExtension.appex in Embed Foundation Extensions */,
+				891C1F7B2EC9EF6C005C6315 /* AU3HelloWorldEffectExtension.appex in Embed Foundation Extensions */,
+				891C1F7E2EC9EF6C005C6315 /* AU3HelloWorldMIDIExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		891C1F722EC9EE61005C6315 /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
+		8D49AD202EC9D6E400DE7273 /* AU3HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AU3HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D49AD232EC9D6E400DE7273 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D49AD272EC9D6E500DE7273 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		8D49AD2A2EC9D6E500DE7273 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		8D49AD2C2EC9D6E500DE7273 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		8D49AD2F2EC9D6E500DE7273 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		8D49AD312EC9D6E500DE7273 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		8D49AD342EC9D6E500DE7273 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		8D49AD372EC9D6E500DE7273 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		8D49AD392EC9D6E500DE7273 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		8D49AD3B2EC9D6E500DE7273 /* AU3HelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AU3HelloWorldApp.swift; sourceTree = "<group>"; };
+		8D49AD3E2EC9D6E500DE7273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D49AD402EC9D6E600DE7273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D49AD422EC9D6E600DE7273 /* AU3HelloWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AU3HelloWorld.entitlements; sourceTree = "<group>"; };
+		8D49AD472EC9D6E700DE7273 /* AU3HelloWorldExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AU3HelloWorldExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D49AD4C2EC9D6E700DE7273 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D49AD4F2EC9D6E700DE7273 /* AU3HelloWorldExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AU3HelloWorldExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D49AD512EC9D6E700DE7273 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		8D49AD542EC9D6E700DE7273 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		8D49AD562EC9D6E700DE7273 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		8D49AD592EC9D6E700DE7273 /* AU3HelloWorldExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AU3HelloWorldExtensionAudioUnit.h; sourceTree = "<group>"; };
+		8D49AD5A2EC9D6E700DE7273 /* AU3HelloWorldExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AU3HelloWorldExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		8D49AD5D2EC9D6E700DE7273 /* AU3HelloWorldExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AU3HelloWorldExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		8D49AD602EC9D6E700DE7273 /* AU3HelloWorldExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AU3HelloWorldExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		8D49AD612EC9D6E700DE7273 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		8D49AD642EC9D6E700DE7273 /* SinOscillator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinOscillator.h; sourceTree = "<group>"; };
+		8D49AD652EC9D6E700DE7273 /* AU3HelloWorldExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AU3HelloWorldExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		8D49AD682EC9D6E700DE7273 /* AU3HelloWorldExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AU3HelloWorldExtensionMainView.swift; sourceTree = "<group>"; };
+		8D49AD6A2EC9D6E700DE7273 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		8D49AD6F2EC9D6E700DE7273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		8D49AD712EC9D6E700DE7273 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		8D49AD732EC9D6E700DE7273 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		8D49AD752EC9D6E700DE7273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D49ADA92EC9D74300DE7273 /* AU3HelloWorldEffectExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AU3HelloWorldEffectExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D49ADAE2EC9D74300DE7273 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D49ADB12EC9D74300DE7273 /* AU3HelloWorldEffectExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AU3HelloWorldEffectExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D49ADB32EC9D74300DE7273 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		8D49ADB62EC9D74300DE7273 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		8D49ADB82EC9D74300DE7273 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		8D49ADBB2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AU3HelloWorldEffectExtensionAudioUnit.h; sourceTree = "<group>"; };
+		8D49ADBC2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AU3HelloWorldEffectExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		8D49ADBF2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AU3HelloWorldEffectExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		8D49ADC12EC9D74300DE7273 /* AU3HelloWorldEffectExtensionBufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AU3HelloWorldEffectExtensionBufferedAudioBus.hpp; sourceTree = "<group>"; };
+		8D49ADC42EC9D74300DE7273 /* AU3HelloWorldEffectExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AU3HelloWorldEffectExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		8D49ADC52EC9D74300DE7273 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		8D49ADC82EC9D74300DE7273 /* AU3HelloWorldEffectExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AU3HelloWorldEffectExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		8D49ADCB2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AU3HelloWorldEffectExtensionMainView.swift; sourceTree = "<group>"; };
+		8D49ADCD2EC9D74300DE7273 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		8D49ADD22EC9D74300DE7273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		8D49ADD42EC9D74300DE7273 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		8D49ADD62EC9D74400DE7273 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		8D49ADD82EC9D74400DE7273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D49AE0A2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AU3HelloWorldMIDIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D49AE0F2EC9D77F00DE7273 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D49AE122EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AU3HelloWorldMIDIExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D49AE142EC9D77F00DE7273 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		8D49AE172EC9D77F00DE7273 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		8D49AE192EC9D77F00DE7273 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		8D49AE1C2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AU3HelloWorldMIDIExtensionAudioUnit.h; sourceTree = "<group>"; };
+		8D49AE1D2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AU3HelloWorldMIDIExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		8D49AE202EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AU3HelloWorldMIDIExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		8D49AE232EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AU3HelloWorldMIDIExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		8D49AE242EC9D77F00DE7273 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		8D49AE272EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AU3HelloWorldMIDIExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		8D49AE2A2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AU3HelloWorldMIDIExtensionMainView.swift; sourceTree = "<group>"; };
+		8D49AE2C2EC9D77F00DE7273 /* MomentaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentaryButton.swift; sourceTree = "<group>"; };
+		8D49AE2E2EC9D77F00DE7273 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		8D49AE332EC9D77F00DE7273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		8D49AE352EC9D77F00DE7273 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		8D49AE372EC9D77F00DE7273 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		8D49AE392EC9D77F00DE7273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D49AD1D2EC9D6E400DE7273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49AD442EC9D6E700DE7273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49ADA62EC9D74300DE7273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49AE072EC9D77F00DE7273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		891C1F7A2EC9EF6C005C6315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D49AD172EC9D6E400DE7273 = {
+			isa = PBXGroup;
+			children = (
+				891C1F722EC9EE61005C6315 /* DEVELOPMENT_TEAM.xcconfig */,
+				8D49AD222EC9D6E400DE7273 /* AU3HelloWorld */,
+				8D49AD4B2EC9D6E700DE7273 /* AU3HelloWorldExtension */,
+				8D49ADAD2EC9D74300DE7273 /* AU3HelloWorldEffectExtension */,
+				8D49AE0E2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension */,
+				891C1F7A2EC9EF6C005C6315 /* Frameworks */,
+				8D49AD212EC9D6E400DE7273 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D49AD212EC9D6E400DE7273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD202EC9D6E400DE7273 /* AU3HelloWorld.app */,
+				8D49AD472EC9D6E700DE7273 /* AU3HelloWorldExtension.appex */,
+				8D49ADA92EC9D74300DE7273 /* AU3HelloWorldEffectExtension.appex */,
+				8D49AE0A2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D49AD222EC9D6E400DE7273 /* AU3HelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD232EC9D6E400DE7273 /* ContentView.swift */,
+				8D49AD3B2EC9D6E500DE7273 /* AU3HelloWorldApp.swift */,
+				8D49AD402EC9D6E600DE7273 /* Assets.xcassets */,
+				8D49AD422EC9D6E600DE7273 /* AU3HelloWorld.entitlements */,
+				8D49AD252EC9D6E500DE7273 /* Common */,
+				8D49AD362EC9D6E500DE7273 /* Model */,
+				8D49AD3D2EC9D6E500DE7273 /* Preview Content */,
+			);
+			path = AU3HelloWorld;
+			sourceTree = "<group>";
+		};
+		8D49AD252EC9D6E500DE7273 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD312EC9D6E500DE7273 /* TypeAliases.swift */,
+				8D49AD262EC9D6E500DE7273 /* UI */,
+				8D49AD292EC9D6E500DE7273 /* Audio */,
+				8D49AD2E2EC9D6E500DE7273 /* MIDI */,
+				8D49AD332EC9D6E500DE7273 /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8D49AD262EC9D6E500DE7273 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD272EC9D6E500DE7273 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D49AD292EC9D6E500DE7273 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD2A2EC9D6E500DE7273 /* Synth.aif */,
+				8D49AD2C2EC9D6E500DE7273 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		8D49AD2E2EC9D6E500DE7273 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD2F2EC9D6E500DE7273 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		8D49AD332EC9D6E500DE7273 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD342EC9D6E500DE7273 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		8D49AD362EC9D6E500DE7273 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD372EC9D6E500DE7273 /* AudioUnitHostModel.swift */,
+				8D49AD392EC9D6E500DE7273 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D49AD3D2EC9D6E500DE7273 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD3E2EC9D6E500DE7273 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D49AD4B2EC9D6E700DE7273 /* AU3HelloWorldExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD4C2EC9D6E700DE7273 /* README.md */,
+				8D49AD752EC9D6E700DE7273 /* Info.plist */,
+				8D49AD4E2EC9D6E700DE7273 /* Common */,
+				8D49AD5F2EC9D6E700DE7273 /* Parameters */,
+				8D49AD632EC9D6E700DE7273 /* DSP */,
+				8D49AD672EC9D6E700DE7273 /* UI */,
+			);
+			path = AU3HelloWorldExtension;
+			sourceTree = "<group>";
+		};
+		8D49AD4E2EC9D6E700DE7273 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD4F2EC9D6E700DE7273 /* AU3HelloWorldExtension-Bridging-Header.h */,
+				8D49AD502EC9D6E700DE7273 /* Parameters */,
+				8D49AD532EC9D6E700DE7273 /* Utility */,
+				8D49AD582EC9D6E700DE7273 /* Audio Unit */,
+				8D49AD5C2EC9D6E700DE7273 /* DSP */,
+				8D49AD6C2EC9D6E700DE7273 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8D49AD502EC9D6E700DE7273 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD512EC9D6E700DE7273 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8D49AD532EC9D6E700DE7273 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD542EC9D6E700DE7273 /* CrossPlatform.swift */,
+				8D49AD562EC9D6E700DE7273 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8D49AD582EC9D6E700DE7273 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD592EC9D6E700DE7273 /* AU3HelloWorldExtensionAudioUnit.h */,
+				8D49AD5A2EC9D6E700DE7273 /* AU3HelloWorldExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		8D49AD5C2EC9D6E700DE7273 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD5D2EC9D6E700DE7273 /* AU3HelloWorldExtensionAUProcessHelper.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8D49AD5F2EC9D6E700DE7273 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD602EC9D6E700DE7273 /* AU3HelloWorldExtensionParameterAddresses.h */,
+				8D49AD612EC9D6E700DE7273 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8D49AD632EC9D6E700DE7273 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD642EC9D6E700DE7273 /* SinOscillator.h */,
+				8D49AD652EC9D6E700DE7273 /* AU3HelloWorldExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8D49AD672EC9D6E700DE7273 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD682EC9D6E700DE7273 /* AU3HelloWorldExtensionMainView.swift */,
+				8D49AD6A2EC9D6E700DE7273 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D49AD6C2EC9D6E700DE7273 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD712EC9D6E700DE7273 /* ObservableAUParameter.swift */,
+				8D49AD732EC9D6E700DE7273 /* AudioUnitViewController.swift */,
+				8D49AD6D2EC9D6E700DE7273 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D49AD6D2EC9D6E700DE7273 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AD6E2EC9D6E700DE7273 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		8D49ADAD2EC9D74300DE7273 /* AU3HelloWorldEffectExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADAE2EC9D74300DE7273 /* README.md */,
+				8D49ADD82EC9D74400DE7273 /* Info.plist */,
+				8D49ADB02EC9D74300DE7273 /* Common */,
+				8D49ADC32EC9D74300DE7273 /* Parameters */,
+				8D49ADC72EC9D74300DE7273 /* DSP */,
+				8D49ADCA2EC9D74300DE7273 /* UI */,
+			);
+			path = AU3HelloWorldEffectExtension;
+			sourceTree = "<group>";
+		};
+		8D49ADB02EC9D74300DE7273 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADB12EC9D74300DE7273 /* AU3HelloWorldEffectExtension-Bridging-Header.h */,
+				8D49ADB22EC9D74300DE7273 /* Parameters */,
+				8D49ADB52EC9D74300DE7273 /* Utility */,
+				8D49ADBA2EC9D74300DE7273 /* Audio Unit */,
+				8D49ADBE2EC9D74300DE7273 /* DSP */,
+				8D49ADCF2EC9D74300DE7273 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8D49ADB22EC9D74300DE7273 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADB32EC9D74300DE7273 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8D49ADB52EC9D74300DE7273 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADB62EC9D74300DE7273 /* CrossPlatform.swift */,
+				8D49ADB82EC9D74300DE7273 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8D49ADBA2EC9D74300DE7273 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADBB2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAudioUnit.h */,
+				8D49ADBC2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		8D49ADBE2EC9D74300DE7273 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADBF2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAUProcessHelper.hpp */,
+				8D49ADC12EC9D74300DE7273 /* AU3HelloWorldEffectExtensionBufferedAudioBus.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8D49ADC32EC9D74300DE7273 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADC42EC9D74300DE7273 /* AU3HelloWorldEffectExtensionParameterAddresses.h */,
+				8D49ADC52EC9D74300DE7273 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8D49ADC72EC9D74300DE7273 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADC82EC9D74300DE7273 /* AU3HelloWorldEffectExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8D49ADCA2EC9D74300DE7273 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADCB2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionMainView.swift */,
+				8D49ADCD2EC9D74300DE7273 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D49ADCF2EC9D74300DE7273 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADD42EC9D74300DE7273 /* ObservableAUParameter.swift */,
+				8D49ADD62EC9D74400DE7273 /* AudioUnitViewController.swift */,
+				8D49ADD02EC9D74300DE7273 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D49ADD02EC9D74300DE7273 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				8D49ADD12EC9D74300DE7273 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		8D49AE0E2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE0F2EC9D77F00DE7273 /* README.md */,
+				8D49AE392EC9D77F00DE7273 /* Info.plist */,
+				8D49AE112EC9D77F00DE7273 /* Common */,
+				8D49AE222EC9D77F00DE7273 /* Parameters */,
+				8D49AE262EC9D77F00DE7273 /* DSP */,
+				8D49AE292EC9D77F00DE7273 /* UI */,
+			);
+			path = AU3HelloWorldMIDIExtension;
+			sourceTree = "<group>";
+		};
+		8D49AE112EC9D77F00DE7273 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE122EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension-Bridging-Header.h */,
+				8D49AE132EC9D77F00DE7273 /* Parameters */,
+				8D49AE162EC9D77F00DE7273 /* Utility */,
+				8D49AE1B2EC9D77F00DE7273 /* Audio Unit */,
+				8D49AE1F2EC9D77F00DE7273 /* DSP */,
+				8D49AE302EC9D77F00DE7273 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8D49AE132EC9D77F00DE7273 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE142EC9D77F00DE7273 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8D49AE162EC9D77F00DE7273 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE172EC9D77F00DE7273 /* CrossPlatform.swift */,
+				8D49AE192EC9D77F00DE7273 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8D49AE1B2EC9D77F00DE7273 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE1C2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAudioUnit.h */,
+				8D49AE1D2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		8D49AE1F2EC9D77F00DE7273 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE202EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAUProcessHelper.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8D49AE222EC9D77F00DE7273 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE232EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionParameterAddresses.h */,
+				8D49AE242EC9D77F00DE7273 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8D49AE262EC9D77F00DE7273 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE272EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8D49AE292EC9D77F00DE7273 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE2A2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionMainView.swift */,
+				8D49AE2C2EC9D77F00DE7273 /* MomentaryButton.swift */,
+				8D49AE2E2EC9D77F00DE7273 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D49AE302EC9D77F00DE7273 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE352EC9D77F00DE7273 /* ObservableAUParameter.swift */,
+				8D49AE372EC9D77F00DE7273 /* AudioUnitViewController.swift */,
+				8D49AE312EC9D77F00DE7273 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D49AE312EC9D77F00DE7273 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				8D49AE322EC9D77F00DE7273 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D49AD1F2EC9D6E400DE7273 /* AU3HelloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D49AD7C2EC9D6E700DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorld" */;
+			buildPhases = (
+				8D49AD1C2EC9D6E400DE7273 /* Sources */,
+				8D49AD1D2EC9D6E400DE7273 /* Frameworks */,
+				8D49AD1E2EC9D6E400DE7273 /* Resources */,
+				8D49AD7B2EC9D6E700DE7273 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D49AD4A2EC9D6E700DE7273 /* PBXTargetDependency */,
+				891C1F7D2EC9EF6C005C6315 /* PBXTargetDependency */,
+				891C1F802EC9EF6C005C6315 /* PBXTargetDependency */,
+			);
+			name = AU3HelloWorld;
+			productName = AU3HelloWorld;
+			productReference = 8D49AD202EC9D6E400DE7273 /* AU3HelloWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D49AD462EC9D6E700DE7273 /* AU3HelloWorldExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D49AD782EC9D6E700DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorldExtension" */;
+			buildPhases = (
+				8D49AD432EC9D6E700DE7273 /* Sources */,
+				8D49AD442EC9D6E700DE7273 /* Frameworks */,
+				8D49AD452EC9D6E700DE7273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AU3HelloWorldExtension;
+			productName = AU3HelloWorldExtension;
+			productReference = 8D49AD472EC9D6E700DE7273 /* AU3HelloWorldExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8D49ADA82EC9D74300DE7273 /* AU3HelloWorldEffectExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D49ADD92EC9D74400DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorldEffectExtension" */;
+			buildPhases = (
+				8D49ADA52EC9D74300DE7273 /* Sources */,
+				8D49ADA62EC9D74300DE7273 /* Frameworks */,
+				8D49ADA72EC9D74300DE7273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AU3HelloWorldEffectExtension;
+			productName = AU3HelloWorldEffectExtension;
+			productReference = 8D49ADA92EC9D74300DE7273 /* AU3HelloWorldEffectExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8D49AE092EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D49AE3A2EC9D77F00DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorldMIDIExtension" */;
+			buildPhases = (
+				8D49AE062EC9D77F00DE7273 /* Sources */,
+				8D49AE072EC9D77F00DE7273 /* Frameworks */,
+				8D49AE082EC9D77F00DE7273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AU3HelloWorldMIDIExtension;
+			productName = AU3HelloWorldMIDIExtension;
+			productReference = 8D49AE0A2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D49AD182EC9D6E400DE7273 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8D49AD1F2EC9D6E400DE7273 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					8D49AD462EC9D6E700DE7273 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					8D49ADA82EC9D74300DE7273 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					8D49AE092EC9D77F00DE7273 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 8D49AD1B2EC9D6E400DE7273 /* Build configuration list for PBXProject "AU3HelloWorld" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D49AD172EC9D6E400DE7273;
+			productRefGroup = 8D49AD212EC9D6E400DE7273 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D49AD1F2EC9D6E400DE7273 /* AU3HelloWorld */,
+				8D49AD462EC9D6E700DE7273 /* AU3HelloWorldExtension */,
+				8D49ADA82EC9D74300DE7273 /* AU3HelloWorldEffectExtension */,
+				8D49AE092EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D49AD1E2EC9D6E400DE7273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49AD3F2EC9D6E500DE7273 /* Preview Assets.xcassets in Resources */,
+				8D49AD412EC9D6E600DE7273 /* Assets.xcassets in Resources */,
+				8D49AD2B2EC9D6E500DE7273 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49AD452EC9D6E700DE7273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49AD662EC9D6E700DE7273 /* AU3HelloWorldExtensionDSPKernel.hpp in Resources */,
+				8D49AD702EC9D6E700DE7273 /* AudioUnitViewController.xib in Resources */,
+				8D49AD5E2EC9D6E700DE7273 /* AU3HelloWorldExtensionAUProcessHelper.hpp in Resources */,
+				8D49AD4D2EC9D6E700DE7273 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49ADA72EC9D74300DE7273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49ADAF2EC9D74300DE7273 /* README.md in Resources */,
+				8D49ADD32EC9D74300DE7273 /* AudioUnitViewController.xib in Resources */,
+				8D49ADC22EC9D74300DE7273 /* AU3HelloWorldEffectExtensionBufferedAudioBus.hpp in Resources */,
+				8D49ADC92EC9D74300DE7273 /* AU3HelloWorldEffectExtensionDSPKernel.hpp in Resources */,
+				8D49ADC02EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAUProcessHelper.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49AE082EC9D77F00DE7273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49AE102EC9D77F00DE7273 /* README.md in Resources */,
+				8D49AE342EC9D77F00DE7273 /* AudioUnitViewController.xib in Resources */,
+				8D49AE212EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAUProcessHelper.hpp in Resources */,
+				8D49AE282EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionDSPKernel.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D49AD1C2EC9D6E400DE7273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49AD382EC9D6E500DE7273 /* AudioUnitHostModel.swift in Sources */,
+				8D49AD3A2EC9D6E500DE7273 /* AudioUnitViewModel.swift in Sources */,
+				8D49AD242EC9D6E500DE7273 /* ContentView.swift in Sources */,
+				8D49AD282EC9D6E500DE7273 /* ViewControllerRepresentable.swift in Sources */,
+				8D49AD352EC9D6E500DE7273 /* StringHelpers.swift in Sources */,
+				8D49AD302EC9D6E500DE7273 /* MIDIManager.swift in Sources */,
+				8D49AD322EC9D6E500DE7273 /* TypeAliases.swift in Sources */,
+				8D49AD2D2EC9D6E500DE7273 /* SimplePlayEngine.swift in Sources */,
+				8D49AD3C2EC9D6E500DE7273 /* AU3HelloWorldApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49AD432EC9D6E700DE7273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49AD622EC9D6E700DE7273 /* Parameters.swift in Sources */,
+				8D49AD692EC9D6E700DE7273 /* AU3HelloWorldExtensionMainView.swift in Sources */,
+				8D49AD722EC9D6E700DE7273 /* ObservableAUParameter.swift in Sources */,
+				8D49AD522EC9D6E700DE7273 /* ParameterSpecBase.swift in Sources */,
+				8D49AD552EC9D6E700DE7273 /* CrossPlatform.swift in Sources */,
+				8D49AD742EC9D6E700DE7273 /* AudioUnitViewController.swift in Sources */,
+				8D49AD6B2EC9D6E700DE7273 /* ParameterSlider.swift in Sources */,
+				8D49AD5B2EC9D6E700DE7273 /* AU3HelloWorldExtensionAudioUnit.mm in Sources */,
+				8D49AD572EC9D6E700DE7273 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49ADA52EC9D74300DE7273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49ADC62EC9D74300DE7273 /* Parameters.swift in Sources */,
+				8D49ADB42EC9D74300DE7273 /* ParameterSpecBase.swift in Sources */,
+				8D49ADD52EC9D74300DE7273 /* ObservableAUParameter.swift in Sources */,
+				8D49ADCC2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionMainView.swift in Sources */,
+				8D49ADBD2EC9D74300DE7273 /* AU3HelloWorldEffectExtensionAudioUnit.mm in Sources */,
+				8D49ADD72EC9D74400DE7273 /* AudioUnitViewController.swift in Sources */,
+				8D49ADCE2EC9D74300DE7273 /* ParameterSlider.swift in Sources */,
+				8D49ADB72EC9D74300DE7273 /* CrossPlatform.swift in Sources */,
+				8D49ADB92EC9D74300DE7273 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D49AE062EC9D77F00DE7273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D49AE2B2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionMainView.swift in Sources */,
+				8D49AE252EC9D77F00DE7273 /* Parameters.swift in Sources */,
+				8D49AE2D2EC9D77F00DE7273 /* MomentaryButton.swift in Sources */,
+				8D49AE362EC9D77F00DE7273 /* ObservableAUParameter.swift in Sources */,
+				8D49AE152EC9D77F00DE7273 /* ParameterSpecBase.swift in Sources */,
+				8D49AE382EC9D77F00DE7273 /* AudioUnitViewController.swift in Sources */,
+				8D49AE2F2EC9D77F00DE7273 /* ParameterSlider.swift in Sources */,
+				8D49AE1E2EC9D77F00DE7273 /* AU3HelloWorldMIDIExtensionAudioUnit.mm in Sources */,
+				8D49AE182EC9D77F00DE7273 /* CrossPlatform.swift in Sources */,
+				8D49AE1A2EC9D77F00DE7273 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		891C1F7D2EC9EF6C005C6315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D49ADA82EC9D74300DE7273 /* AU3HelloWorldEffectExtension */;
+			targetProxy = 891C1F7C2EC9EF6C005C6315 /* PBXContainerItemProxy */;
+		};
+		891C1F802EC9EF6C005C6315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D49AE092EC9D77F00DE7273 /* AU3HelloWorldMIDIExtension */;
+			targetProxy = 891C1F7F2EC9EF6C005C6315 /* PBXContainerItemProxy */;
+		};
+		8D49AD4A2EC9D6E700DE7273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D49AD462EC9D6E700DE7273 /* AU3HelloWorldExtension */;
+			targetProxy = 8D49AD492EC9D6E700DE7273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D49AD6E2EC9D6E700DE7273 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D49AD6F2EC9D6E700DE7273 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+		8D49ADD12EC9D74300DE7273 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D49ADD22EC9D74300DE7273 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+		8D49AE322EC9D77F00DE7273 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D49AE332EC9D77F00DE7273 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D49AD762EC9D6E700DE7273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891C1F722EC9EE61005C6315 /* DEVELOPMENT_TEAM.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D49AD772EC9D6E700DE7273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891C1F722EC9EE61005C6315 /* DEVELOPMENT_TEAM.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8D49AD792EC9D6E700DE7273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AU3HelloWorldExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorldExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld.AU3HelloWorldExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AU3HelloWorldExtension/Common/AU3HelloWorldExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8D49AD7A2EC9D6E700DE7273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AU3HelloWorldExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorldExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld.AU3HelloWorldExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AU3HelloWorldExtension/Common/AU3HelloWorldExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8D49AD7D2EC9D6E700DE7273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AU3HelloWorld/AU3HelloWorld.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AU3HelloWorld/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorld;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8D49AD7E2EC9D6E700DE7273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AU3HelloWorld/AU3HelloWorld.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AU3HelloWorld/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorld;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8D49ADDA2EC9D74400DE7273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AU3HelloWorldEffectExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorldEffectExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld.AU3HelloWorldEffectExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AU3HelloWorldEffectExtension/Common/AU3HelloWorldEffectExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8D49ADDB2EC9D74400DE7273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AU3HelloWorldEffectExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorldEffectExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld.AU3HelloWorldEffectExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AU3HelloWorldEffectExtension/Common/AU3HelloWorldEffectExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8D49AE3B2EC9D77F00DE7273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AU3HelloWorldMIDIExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorldMIDIExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld.AU3HelloWorldMIDIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AU3HelloWorldMIDIExtension/Common/AU3HelloWorldMIDIExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8D49AE3C2EC9D77F00DE7273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AU3HelloWorldMIDIExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AU3HelloWorldMIDIExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.AU3HelloWorld.AU3HelloWorldMIDIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AU3HelloWorldMIDIExtension/Common/AU3HelloWorldMIDIExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D49AD1B2EC9D6E400DE7273 /* Build configuration list for PBXProject "AU3HelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D49AD762EC9D6E700DE7273 /* Debug */,
+				8D49AD772EC9D6E700DE7273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D49AD782EC9D6E700DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorldExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D49AD792EC9D6E700DE7273 /* Debug */,
+				8D49AD7A2EC9D6E700DE7273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D49AD7C2EC9D6E700DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D49AD7D2EC9D6E700DE7273 /* Debug */,
+				8D49AD7E2EC9D6E700DE7273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D49ADD92EC9D74400DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorldEffectExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D49ADDA2EC9D74400DE7273 /* Debug */,
+				8D49ADDB2EC9D74400DE7273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D49AE3A2EC9D77F00DE7273 /* Build configuration list for PBXNativeTarget "AU3HelloWorldMIDIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D49AE3B2EC9D77F00DE7273 /* Debug */,
+				8D49AE3C2EC9D77F00DE7273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D49AD182EC9D6E400DE7273 /* Project object */;
+}
