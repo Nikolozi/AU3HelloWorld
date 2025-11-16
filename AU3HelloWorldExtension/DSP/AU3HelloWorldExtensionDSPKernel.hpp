@@ -74,7 +74,10 @@ public:
     void setMusicalContextBlock(AUHostMusicalContextBlock contextBlock) {
         mMusicalContextBlock = contextBlock;
     }
-    
+    void setMIDIOutputBlock(AUMIDIEventListBlock midiOutBlock) {
+        mMIDIOutBlock = midiOutBlock;
+    }
+
     // MARK: - MIDI Protocol
     MIDIProtocolID AudioUnitMIDIProtocol() const {
         return kMIDIProtocol_2_0;
@@ -84,7 +87,23 @@ public:
         constexpr auto kMiddleA = 440.0;
         return (kMiddleA / 32.0) * pow(2, ((note - 9) / 12.0));
     }
-    
+
+    void sendNoteOn(AUEventSampleTime sampleTime, uint8_t noteNum, uint16_t velocity) {
+        auto message = MIDI2NoteOn(0, 0, noteNum, 0, 0, velocity);
+        MIDIEventList eventList = {};
+        MIDIEventPacket *packet = MIDIEventListInit(&eventList, kMIDIProtocol_2_0);
+        packet = MIDIEventListAdd(&eventList, sizeof(MIDIEventList), packet, 0, 2, (UInt32 *)&message);
+        mMIDIOutBlock(sampleTime, 0, &eventList);
+    }
+
+    void sendNoteOff(AUEventSampleTime sampleTime, uint8_t noteNum, uint16_t velocity) {
+        auto message = MIDI2NoteOff(0, 0, noteNum, 0, 0, velocity);
+        MIDIEventList eventList = {};
+        MIDIEventPacket *packet = MIDIEventListInit(&eventList, kMIDIProtocol_2_0);
+        packet = MIDIEventListAdd(&eventList, sizeof(MIDIEventList), packet, 0, 2, (UInt32 *)&message);
+        mMIDIOutBlock(sampleTime, 0, &eventList);
+    }
+
     /**
      MARK: - Internal Process
      
@@ -110,7 +129,17 @@ public:
                                  nullptr /* sampleOffsetToNextBeat */,
                                  nullptr /* currentMeasureDownbeatPosition */);
         }
-        
+
+        if (_noteState != 0 && mMIDIOutBlock) {
+            const auto shiftedNote = _lastNoteNumber + 19;
+            if (_noteState == 1) {
+                sendNoteOn(bufferStartTime, shiftedNote, 32000);
+            } else {
+                sendNoteOff(bufferStartTime, shiftedNote, 0);
+            }
+            _noteState = 0;
+        }
+
         // Generate per sample dsp before assigning it to out
         for (UInt32 frameIndex = 0; frameIndex < frameCount; ++frameIndex) {
             // Do your frame by frame dsp here...
@@ -167,11 +196,14 @@ public:
         switch (message.channelVoice2.status) {
             case kMIDICVStatusNoteOff: {
                 mNoteEnvelope = 0.0;
+                _noteState = -1;
             }
                 break;
                 
             case kMIDICVStatusNoteOn: {
                 const auto velocity = message.channelVoice2.note.velocity;
+                _lastNoteNumber = message.channelVoice2.note.number;
+                _noteState = 1;
                 const auto freqHertz   = MIDINoteToFrequency(note.number);
 
                 mSinOsc = SinOscillator(mSampleRate);
@@ -183,7 +215,7 @@ public:
                 mNoteEnvelope = (double)velocity / (double)std::numeric_limits<std::uint16_t>::max();
             }
                 break;
-                
+
             default:
                 break;
         }
@@ -200,4 +232,7 @@ public:
     AUAudioFrameCount mMaxFramesToRender = 1024;
     
     SinOscillator mSinOsc;
+    AUMIDIEventListBlock mMIDIOutBlock;
+    int _lastNoteNumber = 0;
+    int _noteState = 0;
 };

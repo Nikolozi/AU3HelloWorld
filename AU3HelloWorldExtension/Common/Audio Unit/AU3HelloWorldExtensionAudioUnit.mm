@@ -119,7 +119,8 @@
 // Subclassers should call the superclass implementation.
 - (BOOL)allocateRenderResourcesAndReturnError:(NSError **)outError {
     const auto outputChannelCount = [self.outputBusses objectAtIndexedSubscript:0].format.channelCount;
-    
+
+    _kernel.setMIDIOutputBlock(self.MIDIOutputEventListBlock);
     _kernel.setMusicalContextBlock(self.musicalContextBlock);
     _kernel.initialize(outputChannelCount, _outputBus.format.sampleRate);
     _processHelper = std::make_unique<AUProcessHelper>(_kernel, outputChannelCount);
@@ -134,6 +135,10 @@
     _kernel.deInitialize();
     
     [super deallocateRenderResources];
+}
+
+- (NSArray<NSString *>*) MIDIOutputNames {
+    return @[@"midiOut"];
 }
 
 #pragma mark - MIDI
